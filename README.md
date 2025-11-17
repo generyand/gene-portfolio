@@ -1,59 +1,165 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Gene Ryan - Portfolio Website
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A modern, minimalistic portfolio website built with Laravel, Blade, and Tailwind CSS. Features a dark mode design with gradient animations and smooth scrolling.
 
-## About Laravel
+## Tech Stack
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### Backend
+- Laravel 12
+- PHP 8.3+
+- Blade Templating Engine
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### Frontend
+- Tailwind CSS v4
+- Alpine.js
+- Vite 7.x
+- DevIcon (Technology Logos)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Featured Technologies
+- **Languages**: JavaScript, TypeScript, PHP, Python, Java
+- **Frontend**: React, Vue, Tailwind CSS
+- **Backend**: Laravel, Node.js, Express
+- **Databases**: MongoDB, PostgreSQL, MySQL, Redis
+- **DevOps**: Docker, Nginx, AWS
+- **AI/ML**: OpenAI, Claude, Gemini, Ollama, Hugging Face, LangChain
 
-## Learning Laravel
+## Features
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+- Single-page scrolling with smooth animations
+- Responsive design (mobile-first)
+- Project showcase with detail pages
+- Skills section with technology logos
+- AI & Machine Learning tools section
+- Contact section with social links
+- Downloadable resume
+- Gradient blob animations
+- Intersection Observer scroll animations
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Projects Showcase
 
-## Laravel Sponsors
+1. **Sayonai** - AI-powered calculator using React, TypeScript, FastAPI, and OpenAI
+2. **Sikap** - E-commerce platform with Laravel, Vue.js, and PostgreSQL
+3. **Nomos** - Task management app with React Native and Node.js
+4. **Jipiey** - Chat application using WebSockets and Redis
+5. **Dtpgo** - Student registration and attendance system with QR codes
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## Prerequisites
 
-### Premium Partners
+- PHP 8.3 or higher
+- Composer
+- Node.js 18+ and npm
+- SQLite (or your preferred database)
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+## Installation
 
-## Contributing
+1. Clone the repository
+```bash
+git clone <repository-url>
+cd gene-portfolio
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+2. Install PHP dependencies
+```bash
+composer install
+```
 
-## Code of Conduct
+3. Install Node.js dependencies
+```bash
+npm install
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+4. Create environment file
+```bash
+cp .env.example .env
+```
 
-## Security Vulnerabilities
+5. Generate application key
+```bash
+php artisan key:generate
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+6. Configure your database in `.env`
+```env
+DB_CONNECTION=sqlite
+# or configure MySQL/PostgreSQL
+```
+
+7. Run migrations (if applicable)
+```bash
+php artisan migrate
+```
+
+## Development
+
+1. Start the Laravel development server
+```bash
+php artisan serve
+```
+
+2. In a separate terminal, start Vite for asset compilation
+```bash
+npm run dev
+```
+
+3. Visit `http://127.0.0.1:8000` in your browser
+
+## Build for Production
+
+Compile assets for production:
+```bash
+npm run build
+```
+
+## Project Structure
+
+```
+gene-portfolio/
+├── app/
+│   └── Http/Controllers/
+│       └── ProjectController.php    # Handles project detail pages
+├── resources/
+│   ├── css/
+│   │   └── app.css                  # Tailwind configuration & custom styles
+│   ├── js/
+│   │   └── app.js                   # Alpine.js & scroll animations
+│   └── views/
+│       ├── components/
+│       │   ├── navigation.blade.php  # Navigation component
+│       │   └── footer.blade.php      # Footer component
+│       ├── layouts/
+│       │   └── app.blade.php         # Main layout template
+│       ├── home.blade.php            # Homepage with all sections
+│       └── project.blade.php         # Project detail page template
+├── public/
+│   └── *.svg                         # Logo files
+└── routes/
+    └── web.php                       # Application routes
+```
+
+## Customization
+
+### Updating Colors
+Edit the theme variables in `resources/css/app.css`:
+```css
+@theme {
+    --color-primary: #6366f1;
+    --color-secondary: #ec4899;
+    --color-accent: #14b8a6;
+}
+```
+
+### Adding Projects
+Update the `$projects` array in `app/Http/Controllers/ProjectController.php`
+
+### Modifying Sections
+Edit `resources/views/home.blade.php` to customize the Hero, About, Skills, Projects, or Contact sections
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This project is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Author
+
+**Gene Ryan**
+- AI / Full Stack Developer
+- Specializing in RAG and AI-powered applications
