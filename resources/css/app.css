@@ -1,0 +1,118 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+
+    /* Custom Color Palette - More Vibrant */
+    --color-primary: #6366f1;
+    --color-secondary: #ec4899;
+    --color-accent: #14b8a6;
+
+    /* Light Mode Colors - Better Contrast */
+    --color-bg-primary: #ffffff;
+    --color-bg-secondary: #f8fafc;
+    --color-text-primary: #0f172a;
+    --color-text-secondary: #475569;
+    --color-border: #e2e8f0;
+
+    /* Dark Mode Colors - Better Contrast */
+    --color-dark-bg-primary: #0a0f1e;
+    --color-dark-bg-secondary: #1a1f35;
+    --color-dark-text-primary: #f1f5f9;
+    --color-dark-text-secondary: #cbd5e1;
+    --color-dark-border: #293548;
+
+    /* Gradient Colors */
+    --gradient-blue-start: #3b82f6;
+    --gradient-blue-end: #8b5cf6;
+    --gradient-pink-start: #ec4899;
+    --gradient-pink-end: #f97316;
+    --gradient-teal-start: #14b8a6;
+    --gradient-teal-end: #06b6d4;
+}
+
+/* Base Styles */
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        @apply bg-dark-bg-primary text-dark-text-primary;
+    }
+}
+
+/* Component Utilities */
+@layer components {
+    /* Gradient Blob Backgrounds */
+    .gradient-blob {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(80px);
+        opacity: 0.5;
+        animation: blob 7s infinite;
+    }
+
+    @keyframes blob {
+        0% {
+            transform: translate(0px, 0px) scale(1);
+        }
+        33% {
+            transform: translate(30px, -50px) scale(1.1);
+        }
+        66% {
+            transform: translate(-20px, 20px) scale(0.9);
+        }
+        100% {
+            transform: translate(0px, 0px) scale(1);
+        }
+    }
+
+    /* Dot Pattern Background */
+    .dot-pattern {
+        background-image: radial-gradient(circle, currentColor 1px, transparent 1px);
+        background-size: 20px 20px;
+    }
+
+    /* Scroll Animation Classes */
+    .fade-in {
+        opacity: 0;
+        animation: fadeIn 0.8s ease-in forwards;
+    }
+
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+        }
+    }
+
+    .slide-up {
+        opacity: 0;
+        transform: translateY(30px);
+        animation: slideUp 0.8s ease-out forwards;
+    }
+
+    @keyframes slideUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+/* Utility Classes */
+@layer utilities {
+    .text-gradient {
+        background: linear-gradient(90deg, #818cf8 0%, #f472b6 50%, #2dd4bf 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        filter: brightness(1.3);
+    }
+}

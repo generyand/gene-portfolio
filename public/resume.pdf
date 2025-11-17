@@ -1,0 +1,69 @@
+GENE RYAN - AI / FULL STACK DEVELOPER
+
+CONTACT
+Email: generyan.dep@gmail.com
+GitHub: github.com/generyand
+LinkedIn: linkedin.com/in/generyand
+
+SUMMARY
+AI / Full Stack Developer specializing in building AI-powered applications with RAG and modern web technologies.
+Experienced in creating intelligent web applications leveraging Large Language Models and vector databases.
+
+SKILLS
+
+Frontend Development:
+- JavaScript, TypeScript
+- React, Next.js
+- TailwindCSS, CSS3
+
+Backend Development:
+- Node.js, Express
+- Python, FastAPI
+- Java
+
+AI/ML Technologies:
+- OpenAI API
+- Anthropic Claude API
+- Google Gemini
+- Hugging Face
+- LangChain
+
+Databases:
+- MongoDB, PostgreSQL
+- MySQL, Redis
+- Qdrant (Vector Database)
+
+DevOps & Infrastructure:
+- Docker, Nginx
+- AWS
+
+FEATURED PROJECTS
+
+Sayonai
+AI-powered calculator converting mathematical expressions from images into solutions
+Technologies: React, TypeScript, FastAPI, OpenAI API, Computer Vision
+
+Sikap
+Cross-platform smart daily planner and task management application
+Technologies: Electron.js, React, TailwindCSS, Node.js
+
+Nomos
+AI-powered legal document analyzer for identifying risks and ensuring compliance
+Technologies: Python, FastAPI, OpenAI API, LangChain, React
+
+Jipiey
+GPA calculator with AI-powered grade recognition from image uploads
+Technologies: React, TypeScript, OCR, OpenAI API
+
+Dtpgo
+Hybrid student registration and attendance system with QR code scanning
+Technologies: Node.js, Express, MongoDB, React, QR Code
+
+LEARNING FOCUS
+- Web Security Fundamentals (OWASP Top 10)
+- CTF Challenges
+- Advanced RAG Techniques
+- Vector Database Optimization
+
+---
+NOTE: Replace this placeholder with your actual PDF resume.
